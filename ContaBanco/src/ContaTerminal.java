@@ -3,7 +3,7 @@
 import java.util.Scanner;
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        var scanner = new Scanner(System.in);
+         Scanner scanner  = new Scanner(System.in);
 
         /*
          * todo
@@ -13,12 +13,12 @@ public class ContaTerminal {
          * exibir a mensagem final
          *
          */
+        System.out.println("Informe nome cliente");
+        String nomeCliente = scanner.nextLine();
         System.out.println("Numero da conta ");
         var numero= scanner.nextInt();
         System.out.println("Informe numero da Agencia");
         var agencia = scanner.next();
-        System.out.println("Informe nome cliente");
-        String nomeCliente = scanner.next();
         System.out.println("informe valor deposito inicial");
         var saldo = scanner.next();
 
